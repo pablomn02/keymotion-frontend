@@ -1,0 +1,66 @@
+.navbar {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+  }
+  
+  .navbar-brand img {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+  }
+  
+  .nav-link {
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .nav-link:hover {
+    color: #9c54e9;
+    transform: scale(1.1);
+  }
+  
+  .form-control {
+    border: none;
+    background-color: rgba(255, 255, 255, 0.2); /* Fondo translúcido */
+    color: white;
+  }
+  
+  .form-control::placeholder {
+    color: rgba(226, 223, 223, 0.7);
+  }
+  
+  .form-control:focus {
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: none;
+    border: none;
+  }
+  
+  .btn-outline-light {
+    border-color: white;
+    color: white;
+  }
+  
+  .btn-outline-light:hover {
+    background-color: #6a11cb;
+    color: #ffffff; /* Cambiar color al estilo del gradiente */
+  }
+  
+  .btn-light {
+    color: #6a11cb;
+    font-weight: bold;
+  }
+
+  .btn-ready:hover{
+    background-color: #6a11cb;
+    color:#ffffff;
+  }
+
+  .btn-ready{
+    background-color: #ffffff;
+    color: #6a11cb;
+  }
+  
+  .btn-light:hover {
+    background-color: #000000;
+    color: white;
+  }
+  

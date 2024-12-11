@@ -1,0 +1,74 @@
+<div class="search-container">
+    <div class="overlay">
+      <div class="filter-section card p-4">
+        <ul class="nav nav-tabs mb-3" id="tabNavigation" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active"
+              id="comprar-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#comprar"
+              type="button"
+              role="tab"
+              aria-controls="comprar"
+              aria-selected="true"
+            >
+              Comprar
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="vender-tab"
+              data-bs-toggle="tab"
+              data-bs-target="#vender"
+              type="button"
+              role="tab"
+              aria-controls="vender"
+              aria-selected="false"
+            >
+              Vender
+            </button>
+          </li>
+        </ul>
+        <div class="tab-content" id="tabContent">
+          <div class="tab-pane fade show active" id="comprar" role="tabpanel" aria-labelledby="comprar-tab">
+            <form>
+              <div class="mb-3">
+                <label for="marcaModelo" class="form-label">Marca y modelo</label>
+                <select id="marcaModelo" class="form-select">
+                  <option value="">Cualquiera</option>
+                  <option value="Toyota">Toyota</option>
+                  <option value="Ford">Ford</option>
+                  <option value="Tesla">Tesla</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="provincia" class="form-label">Provincias</label>
+                <select id="provincia" class="form-select">
+                  <option value="">Todas</option>
+                  <option value="Madrid">Madrid</option>
+                  <option value="Barcelona">Barcelona</option>
+                  <option value="Valencia">Valencia</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="precio" class="form-label">Precio</label>
+                <select id="precio" class="form-select">
+                  <option value="">Cualquier precio</option>
+                  <option value="10000">Hasta 10,000€</option>
+                  <option value="20000">Hasta 20,000€</option>
+                  <option value="50000">Hasta 50,000€</option>
+                </select>
+              </div>
+              <button type="submit" class="btn btn-danger w-100">Mostrar 269.405 resultados</button>
+            </form>
+          </div>
+          <div class="tab-pane fade" id="vender" role="tabpanel" aria-labelledby="vender-tab">
+            <p class="text-center">Sección de vender en construcción</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
