@@ -6,10 +6,15 @@ import { RouterModule, Routes } from '@angular/router';
 import { NavBarComponent } from './componentes/nav-bar/nav-bar.component';
 import { HomeComponent } from './paginas/home/home.component';
 import { ContactoComponent } from './paginas/contacto/contacto.component';
+import { VehiculosComponent } from './paginas/vehiculos/vehiculos.component';
+
+import { HttpClientModule } from '@angular/common/http';
+
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'contacto', component: ContactoComponent }
+  { path: 'contacto', component: ContactoComponent },
+  { path: 'vehiculos', component: VehiculosComponent}
 ];
 
 @NgModule({
@@ -17,11 +22,14 @@ const routes: Routes = [
     AppComponent,
     NavBarComponent,
     HomeComponent,
-    ContactoComponent
+    ContactoComponent,
+    VehiculosComponent
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(routes)
+    HttpClientModule,
+    RouterModule.forRoot(routes),
+    
   ],
   providers: [],
   bootstrap: [AppComponent]

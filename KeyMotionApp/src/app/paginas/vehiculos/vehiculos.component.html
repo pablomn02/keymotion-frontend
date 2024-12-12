@@ -1,0 +1,24 @@
+<div class="container mt-4">
+    <h2>Lista de Vehículos</h2>
+    <div class="row">
+      <div class="col-md-4" *ngFor="let vehiculo of listaVehiculos">
+        <div class="card" style="width: 18rem;">
+          <img *ngIf="vehiculo.imagenes && vehiculo.imagenes[0]" [src]="vehiculo.imagenes[0]" class="card-img-top" alt="Imagen del vehículo">
+          <div class="card-body">
+            <h5 class="card-title">{{ vehiculo.marca }} {{ vehiculo.modelo }}</h5>
+            <p class="card-text">Modelo: {{ vehiculo.modelo }}</p>
+            <p class="card-text">Año: {{ vehiculo.anio }}</p>
+            <p class="card-text">Precio: ${{ vehiculo.precio }}</p>
+            <a href="#" class="btn btn-primary">Más Información</a>
+          </div>
+          <div *ngIf="vehiculo.imagenes && vehiculo.imagenes.length > 1" class="card-footer">
+            <h6>Otras imágenes:</h6>
+            <div *ngFor="let img of vehiculo.imagenes.slice(1)">
+              <img [src]="img" class="img-thumbnail" style="width: 50px; height: 50px;">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
